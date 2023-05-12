@@ -1,0 +1,67 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Aditya Navale, San Jose State University, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.6.0
+Target DLL:      UL2CM3.DLL V1.164.8.0
+Dialog DLL:      TARMCM1.DLL V1.14.6.0
+ 
+<h2>Project:</h2>
+H:\My Drive\Classes\ee_277a_emb_soc\Final Project\tic_tac_toe_final_project\Keil\keilproj.uvprojx
+Project File Date:  05/11/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling main.c...
+..\Files\Software\Application\main.c(21): warning:  #177-D: variable "i"  was declared but never referenced
+  static int i,j;
+..\Files\Software\Application\main.c(21): warning:  #177-D: variable "j"  was declared but never referenced
+  static int i,j;
+..\Files\Software\Application\main.c(22): warning:  #550-D: variable "key"  was set but never used
+  static char key;
+..\Files\Software\Application\main.c(23): warning:  #550-D: variable "score1"  was set but never used
+  static int score1;
+..\Files\Software\Application\main.c(24): warning:  #550-D: variable "score2"  was set but never used
+  static int score2;
+..\Files\Software\Application\main.c: 5 warnings, 0 errors
+linking...
+Program Size: Code=1632 RO-data=140 RW-data=48 ZI-data=2148  
+After Build - User command #1: fromelf -cvf .\Objects\code.axf --vhx --32x1 -o code.hex
+After Build - User command #2: fromelf -cvf .\Objects\code.axf -o disasm.txt
+".\Objects\code.axf" - 0 Error(s), 5 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Target_1
+  C:/Users/adi_n/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/adi_n/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM0/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

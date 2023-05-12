@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# updatemem v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu May 11 16:58:41 2023
+# Process ID: 10820
+# Current directory: H:/My Drive/Classes/ee_277a_emb_soc/Final Project/tic_tac_toe_final_project/Vivado/VivadoProject
+# Command line: updatemem.exe -mode batch -source C:/Xilinx/Vivado/2022.2/scripts/updatemem/main.tcl -notrace -tclargs -meminfo bram.mmi -data code.mem -proc my_bram -bit H:/My Drive/Classes/ee_277a_emb_soc/Final Project/tic_tac_toe_final_project/Vivado/VivadoProject/VivadoProject.runs/impl_1/AHBLITE_SYS.bit -out reflash.bit -force -debug
+# Log file: H:/My Drive/Classes/ee_277a_emb_soc/Final Project/tic_tac_toe_final_project/Vivado/VivadoProject/updatemem.log
+# Journal file: H:/My Drive/Classes/ee_277a_emb_soc/Final Project/tic_tac_toe_final_project/Vivado/VivadoProject\updatemem.jou
+# Running On: anonymous-pc, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 16, Host memory: 16354 MB
+#-----------------------------------------------------------
+source C:/Xilinx/Vivado/2022.2/scripts/updatemem/main.tcl -notrace
