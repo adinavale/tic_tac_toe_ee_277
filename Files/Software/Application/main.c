@@ -34,25 +34,32 @@ void Game_Init(void)
 	//Draw a game region
 	clear_screen();
 	
-	rectangle(left_boundary,top_boundary,right_boundary,top_boundary+boundary_thick,BLUE);//draws top boundary
-	rectangle(left_boundary,top_boundary,left_boundary+boundary_thick,bottom_boundary,BLUE);//draws left boundary
-	rectangle(left_boundary,bottom_boundary,right_boundary,bottom_boundary+boundary_thick,BLUE);//draws bottom boundary
-	rectangle(right_boundary,top_boundary,right_boundary+boundary_thick,bottom_boundary+boundary_thick,BLUE);//draws right boundary
-
 	//Initialise data	
 	score1 = 0;
 	score2 = 0;
 	
 	//Print instructions on text console of VGA
-	printf("\n------- test Tic Tac Toe Game --------");
+	printf("\n----- Tic Tac Toe Game -----");
+	printf("\n---  Get three in a row ----");
 	
 	//First horizontal line
-	for(col = 0; col < 128; col++){
-		VGA_plot_pixel(row, 160, WHITE);
+	for(col = 5; col < 96; col++){
+		VGA_plot_pixel(col, 40, WHITE);
 	}
 
-	for(col = 0; col < 128; col++){
-		VGA_plot_pixel(row, 320, WHITE);
+	//Second horizontal line
+	for(col = 5; col < 96; col++){
+		VGA_plot_pixel(col, 80, WHITE);
+	}
+
+	//Left vertical line
+	for(row = 5; row < 116; row++){
+		VGA_plot_pixel(33, row, WHITE);
+	}
+
+	//Right vertical line
+	for(row = 5; row < 116; row++){
+		VGA_plot_pixel(66, row, WHITE);
 	}
 
 	while(KBHIT()==0); //wait till keyboard press is detected
